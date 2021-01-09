@@ -77,7 +77,6 @@ class SimplifiedTicTacToe(py_environment.PyEnvironment):
             shape=(1,9), dtype=np.int32, minimum=0, maximum=i*j-1, name='observation')
         self._state = initialState
         self._episode_ended = False
-        
     def action_spec(self):
         return self._action_spec
     
